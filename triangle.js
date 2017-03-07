@@ -6,15 +6,15 @@ triangle.set_triangle_background = function(
 	radius = 30,
 	colors = ['#AAE0FF','#D0FFFF', '#C0C0FF']){
 
+	var bounding_box = element.getBoundingClientRect();
 	var vertices = poisson_disc(
-		$(element).outerWidth(),
-		$(element).outerHeight(),
+		bounding_box.width,
+		bounding_box.height,
 		radius
 	);
 
 	//create an off screen canvas object on which to draw
 	var canvas = document.createElement('canvas');
-	var bounding_box = element.getBoundingClientRect();
 	canvas.width = bounding_box.width;
 	canvas.height = bounding_box.height;
 	var ctx = canvas.getContext('2d');
@@ -38,9 +38,8 @@ triangle.set_triangle_background = function(
 			}
 
 	//set the background!
-	$(element).css(
-		{'background-image':"url(" + canvas.toDataURL("image/png",1.0)+ ")" }
-	);
+	element.style['background-image'] =
+		"url(" + canvas.toDataURL("image/png",1.0) + ")";
 }
 
 return triangle;
