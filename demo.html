@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Trinagle-backing demo</title>
+<style type="text/css" media="screen">
+p {
+	padding: 30px;
+	width: 400px;
+}
+</style>
+
+
+<script src="triangle.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+onload = function(){
+
+	var p_list = document.getElementsByTagName('p');
+	for(var i = p_list.length; i; ){
+		TRIANGLE.set_triangle_background(p_list[--i], 15);	
+	};
+
+}
+</script>
+	</head>
+	<body>
+		<h1>Triangle-Backing Test</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend velit quis rhoncus ornare. Vestibulum nec enim ac purus egestas suscipit at vitae libero. Mauris ullamcorper tincidunt mi. Curabitur commodo efficitur dignissim. Aliquam in est nibh. Sed vestibulum eros in massa condimentum malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+
+<p>Duis placerat nisl leo, in finibus ex fermentum eu. Donec vel rutrum ipsum, quis gravida diam. Nunc vel aliquam tortor. Etiam vitae justo laoreet, pharetra mauris at, ullamcorper ante. Sed at nunc non quam placerat maximus. Fusce mauris massa, tristique eu scelerisque sed, placerat eget nibh. Vivamus sodales viverra felis, non egestas tellus tempor quis. Proin metus massa, blandit convallis convallis eget, tristique in risus. Pellentesque sem tortor, bibendum sit amet tortor elementum, tincidunt feugiat augue. Morbi faucibus, neque sit amet interdum lobortis, dui lectus posuere nisl, ornare ultrices sapien massa id ante. Proin tincidunt magna mi, at dictum nunc tincidunt vitae. Aliquam nec est volutpat, laoreet mi sed, ultrices neque.</p>
+
+
+<p>Suspendisse tempus enim non quam posuere, ac scelerisque ligula suscipit. Suspendisse potenti. Sed commodo gravida faucibus. Ut placerat ut eros id ultrices. Aenean molestie vulputate placerat. Sed cursus efficitur diam ac euismod. Mauris non pulvinar augue. Aenean mollis facilisis lacus, id accumsan nibh egestas eu. Ut tempus viverra enim sit amet tristique. Etiam sit amet turpis quis neque pellentesque auctor. Nulla nunc mi, vehicula nec pharetra id, porta at odio. Ut ut suscipit dui.</p>
+
+
+<p>Proin at metus gravida, mattis ligula a, suscipit orci. In accumsan urna at eros aliquet, quis blandit sem pulvinar. Proin fermentum, orci nec iaculis accumsan, quam libero placerat magna, ut luctus velit erat at leo. Morbi vel mattis velit, non porttitor lorem. Suspendisse ac augue risus. In hac habitasse platea dictumst. Curabitur ex magna, dictum et arcu et, luctus rutrum quam. Duis pretium sit amet orci non pretium. Nulla dictum turpis at placerat eleifend. Integer pulvinar dapibus sem, ut tempor felis hendrerit at. Vivamus laoreet quis arcu eu auctor. Curabitur sit amet mauris erat. Aliquam laoreet neque ac ullamcorper egestas.</p>
+
+<p>Mauris tempor fringilla dolor, at feugiat dui pulvinar vitae. Maecenas dictum, urna in lobortis rhoncus, purus erat fermentum purus, quis consequat turpis nunc nec ipsum. Mauris porttitor imperdiet sem faucibus hendrerit. Etiam et mauris non risus congue suscipit a et urna. Nullam euismod blandit arcu. Praesent at bibendum ligula. Suspendisse urna eros, congue accumsan neque interdum, accumsan tempor ligula. Quisque aliquet eu dolor in commodo. Mauris finibus vel ipsum in aliquet. Praesent id eros nulla.</p>
+
+	</body>
+</html>
