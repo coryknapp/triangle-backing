@@ -3,11 +3,11 @@
 procedurally generate nice looking tessellated triangle backgrounds for html
 elements
 
-##Screenshot
+## Screenshot
 
 ![Screenshot](screenshot.png?raw=true)
 
-##Usage
+## Usage
 
 The following will give every `p` element a tessellated triangle backgrounds.
 
@@ -26,7 +26,7 @@ optional (which is to say, default values are provided.)
 3. List of colors.  The color for any given triangle is selected randomly from
 this list.  Default is `['#AAE0FF','#D0FFFF', '#C0C0FF']`
 
-##Math
+## Math
 
 First we generate a Poisson-disc sample of somewhat evenly spaced points, then
 link them together in a Delaunay triangulation.
